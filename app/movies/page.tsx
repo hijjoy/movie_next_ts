@@ -3,6 +3,7 @@ import { TMovie } from "@/types/movies";
 import React from "react";
 import { AiFillAliwangwang } from "react-icons/ai";
 import MovieList from "./_components/movieList";
+import Link from "next/link";
 
 const MoviePage = async () => {
   const { data } = await getMovies();
@@ -17,6 +18,9 @@ const MoviePage = async () => {
         <h1 className="text-4xl font-bold tracking-wide ">
           당신의 영화를 추천해주세요
         </h1>
+        {/* <Link href={"/post"} className="w-[300px] opacity-90 text-center ">
+          Share your favorite movie
+        </Link> */}
       </div>
       <MovieList movies={data} />
     </div>

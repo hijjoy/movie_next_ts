@@ -8,7 +8,7 @@ interface IMovieProps {
 
 const MovieList = ({ movies }: IMovieProps) => {
   return (
-    <div className="flex flex-wrap justify-center w-8/12 h-full gap-10 mb-12 mt-36 ">
+    <div className="flex flex-wrap justify-center w-8/12 h-full gap-10 mb-20 mt-36 ">
       {movies.map((e) => (
         <MoviePoster key={e.id} movie={e} />
       ))}
